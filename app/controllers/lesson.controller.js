@@ -65,3 +65,28 @@ exports.findOne = (req, res) => {
             });
         });
 };
+
+// Update a Lesson by the id in the request
+exports.update = (req, res) => {
+    const id = req.params.id;
+
+    Lesson.update(req.body, {
+        where: { id: id }
+    })
+        .then(num => {
+            if (num == 1) {
+                res.send({
+                    message: "Lesson was updated successfully."
+                });
+            } else {
+                res.send({
+                    message: `Cannot update Lesson with id=${id}. Maybe Lesson was not found or req.body is empty!`
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Error updating Lesson with id=" + id
+            });
+        });
+};
