@@ -54,8 +54,15 @@ module.exports = app => {
       result.errors.length ? returnError(result.errors, res) : lessons.findOne(req, res);
     });
 
-    // Update a Lesson with id
+  // Update a Lesson with id
   router.put("/:id", lessons.update);
+
+  // Delete a Lesson with id
+  router.delete("/:id", lessons.delete);
+
+  // Delete all Lessons
+  router.delete("/", lessons.deleteAll);
+
 
 
 };
