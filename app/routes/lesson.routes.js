@@ -55,14 +55,14 @@ module.exports = app => {
     });
 
   // Update a Lesson with id
-  router.put("/:id", lessons.update);
+  router.patch("/:id", lessons.update);
 
   // Delete a Lesson with id
   router.delete("/:id", lessons.delete);
 
   // Delete all Lessons
   router.delete("/", lessons.deleteAll);
-  
+
   function returnError(errors, res) {
     var listaMsgErrors = [];
     errors.forEach(error => {
