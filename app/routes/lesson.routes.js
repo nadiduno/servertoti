@@ -44,7 +44,16 @@ module.exports = app => {
 
   // Retrieve all Lessons
   router.get("/lista-inteira", lessons.findAll);
+  // Retrieve all published Lessons
+  router.get("/published", lessons.findAllPublished);
 
-    
+  // Retrieve a single Lesson with id
+  router.get("/id", query('id').notEmpty().withMessage('ID é obrigatório'),
+    (req, res) => {
+      const result = validationResult(req);
+      result.errors.length ? returnError(result.errors, res) : lessons.findOne(req, res);
+    });
+
+
 
 };
