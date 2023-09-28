@@ -62,7 +62,15 @@ module.exports = app => {
 
   // Delete all Lessons
   router.delete("/", lessons.deleteAll);
+  
+  function returnError(errors, res) {
+    var listaMsgErrors = [];
+    errors.forEach(error => {
+      listaMsgErrors.push(error.msg);
+    });
+    res.status(400).send({ messagem: listaMsgErrors.join(', ') });
+  };
 
-
+  app.use("/api/lessons", router);
 
 };
