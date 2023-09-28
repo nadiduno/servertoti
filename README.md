@@ -34,3 +34,19 @@ trocar 123 pela senha que usou ao configurar o banco de dados
 Professor [Lucas](https://github.com/lucastoti)
 
 [Toti Diversidade](https://totidiversidade.com.br/)
+
+<br />
+
+🚧 Projeto em construção 🚧
+
+<br />
+
+[Jacky Mathieu](https://github.com/123stack)
+
+<br />
+
+[Tchuda  Bidenguilté](https://github.com/Oneboy97)
+
+<br />
+
+[Nadi Duno](https://github.com/nadiduno/)
