@@ -115,3 +115,20 @@ exports.delete = (req, res) => {
             });
         });
 };
+
+// Delete all Lessons from the database.
+exports.deleteAll = (req, res) => {
+    Lesson.destroy({
+        where: {},
+        truncate: false
+    })
+        .then(nums => {
+            res.send({ message: `${nums} Lessons were deleted successfully!` });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while removing all lesson."
+            });
+        });
+};
