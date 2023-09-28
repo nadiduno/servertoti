@@ -90,3 +90,28 @@ exports.update = (req, res) => {
             });
         });
 };
+
+// Delete a Lesson with the specified id in the request
+exports.delete = (req, res) => {
+    const id = req.params.id;
+
+    Lesson.destroy({
+        where: { id: id }
+    })
+        .then(num => {
+            if (num == 1) {
+                res.send({
+                    message: "Lesson was deleted successfully!"
+                });
+            } else {
+                res.send({
+                    message: `Cannot delete Lesson with id=${id}. Maybe Lesson was not found!`
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Could not delete Lesson with id=" + id
+            });
+        });
+};
