@@ -42,6 +42,9 @@ module.exports = app => {
       result.errors.length ? returnError(result.errors, res) : lessons.create(req, res);
     });
 
+  // Retrieve all Lessons
+  router.get("/lista-inteira", lessons.findAll);
 
+    
 
 };
