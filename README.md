@@ -1,5 +1,12 @@
 # Node.js Express, Sequelize & PostgreSQL: CRUD Rest APIs
 
+<hr>
+
+# Tecnologias implementadas
+
+[NodeJS]() | [Express](https://expressjs.com/pt-br/) | [Express-Valitador](https://express-validator.github.io/docs) | [Sequelize](https://sequelize.org/) | [cors](https://github.com/expressjs/cors) | [PostgreSQL](https://www.postgresql.org/)
+
+<hr>
 
 ## Project setup
 ```bash
