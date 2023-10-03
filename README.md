@@ -1,10 +1,15 @@
+[![Author](https://img.shields.io/badge/Dev-Jacky%20Mathieu-blueviolet%20)](https://github.com/123stack)
+[![Author](https://img.shields.io/badge/Dev-Tchuda%20Bidenguilté-blueviolet%20)](https://github.com/Oneboy97)
+[![Author](https://img.shields.io/badge/Dev-Nadi%20Duno-blueviolet%20)](https://github.com/nadiduno/)
+
+<br />
 # Node.js Express, Sequelize & PostgreSQL: CRUD Rest APIs
 
 <hr>
 
 # Tecnologias implementadas
 
-[NodeJS]() | [Express](https://expressjs.com/pt-br/) | [Express-Valitador](https://express-validator.github.io/docs) | [Sequelize](https://sequelize.org/) | [cors](https://github.com/expressjs/cors) | [PostgreSQL](https://www.postgresql.org/)
+[NodeJS](https://nodejs.org/) | [Express](https://expressjs.com/pt-br/) | [Express-Valitador](https://express-validator.github.io/docs) | [Sequelize](https://sequelize.org/) | [cors](https://github.com/expressjs/cors) | [PostgreSQL](https://www.postgresql.org/) | [Thunder Client](https://www.thunderclient.com/)
 
 <hr>
 
@@ -41,12 +46,5 @@ Professor [Lucas](https://github.com/lucastoti)
 
 <br />
 
-[Jacky Mathieu](https://github.com/123stack)
-
-<br />
-
-[Tchuda  Bidenguilté](https://github.com/Oneboy97)
-
-<br />
-
-[Nadi Duno](https://github.com/nadiduno/)
+<💜 />
+[Jacky Mathieu](https://github.com/123stack) | [Tchuda  Bidenguilté](https://github.com/Oneboy97) | [Nadi Duno](https://github.com/nadiduno/)
